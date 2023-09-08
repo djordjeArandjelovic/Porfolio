@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import img from "../assets/cover4.svg";
+import helloImg from "../assets/hello.png";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa6";
 
@@ -25,8 +26,9 @@ const Home = () => {
 				gap={{ base: "10rem", md: 2, lg: 0 }}
 			>
 				<Box width={"50%"}>
+					{/* <Image className="helloImg" src={helloImg} /> */}
 					<Heading className="name" as={"h1"} marginBottom={5}>
-						Djordje Arandjelovic
+						Djordje Arandjelo<span>vic</span>
 					</Heading>
 					<Heading className="position" as={"h3"} fontSize={"md"}>
 						Frontend Developer

@@ -15,9 +15,11 @@ import {
 	Stack,
 	useColorMode,
 	Center,
+	Show,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
 	const { colorMode, toggleColorMode } = useColorMode("dark");
@@ -38,19 +40,22 @@ const Navbar = () => {
 					</Box>
 
 					<Flex alignItems={"center"}>
-						<Box marginRight={10} display={"flex"} gap={3}>
-							<Link to={"/"}>Home</Link>
-							<Link to={"/resume"}>Resume</Link>
-							<Link to={"/projects"}>Projects</Link>
-							<Link to={"/funfacts"}>Fun Facts</Link>
-							<Link to={"/contact"}>Contact</Link>
-						</Box>
-						<Stack direction={"row"} spacing={7}>
+						<Show above="md">
+							<Box marginRight={10} display={"flex"} gap={3}>
+								<Link to={"/"}>Home</Link>
+								<Link to={"/resume"}>Resume</Link>
+								<Link to={"/projects"}>Projects</Link>
+								<Link to={"/funfacts"}>Fun Facts</Link>
+								<Link to={"/contact"}>Contact</Link>
+							</Box>
+						</Show>
+
+						{/* <Stack direction={"row"} spacing={7}>
 							<Button onClick={toggleColorMode}>
 								{colorMode === "light" ? <MoonIcon /> : <SunIcon />}
 							</Button>
 
-							<Menu>
+							<Menu marginRight="10px">
 								<MenuButton
 									as={Button}
 									rounded={"full"}
@@ -82,7 +87,10 @@ const Navbar = () => {
 									<MenuItem>Logout</MenuItem>
 								</MenuList>
 							</Menu>
-						</Stack>
+						</Stack> */}
+						<Show below="md">
+							<HamburgerMenu />
+						</Show>
 					</Flex>
 				</Flex>
 			</Box>

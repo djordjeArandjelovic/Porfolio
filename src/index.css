@@ -51,6 +51,8 @@ a:hover {
 
 .position {
 	position: relative;
+	color: #ffc940;
+	margin-left: 9rem;
 }
 
 /* .position::before {
@@ -284,10 +286,24 @@ main {
 	color: #6e77a0;
 }
 .job-experience .job .role {
-	font-size: 1.75rem;
+	font-size: 1.4rem;
+	font-weight: 600;
 }
 
 .sidebar {
 	display: none;
 	transition: 0.5s;
+}
+
+.helloImg {
+	position: absolute;
+	z-index: -1;
+	top: 15rem;
+	height: 100px;
+	left: 19rem;
+	transform: rotate(45deg);
+}
+
+.black {
+	color: #000;
 }
