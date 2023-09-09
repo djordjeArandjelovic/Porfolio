@@ -29,9 +29,9 @@ const Navbar = () => {
 			<Box
 				bg={useColorModeValue("gray.100", "gray.900")}
 				px={10}
-				position={"absolute"}
-				top="0"
-				left="0"
+				// position={"absolute"}
+				// top="0"
+				// left="0"
 				width={"100%"}
 			>
 				<Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
@@ -41,11 +41,11 @@ const Navbar = () => {
 
 					<Flex alignItems={"center"}>
 						<Show above="md">
-							<Box marginRight={10} display={"flex"} gap={3}>
+							<Box display={"flex"} gap={3}>
 								<Link to={"/"}>Home</Link>
 								<Link to={"/resume"}>Resume</Link>
 								<Link to={"/projects"}>Projects</Link>
-								<Link to={"/funfacts"}>Fun Facts</Link>
+								{/* <Link to={"/funfacts"}>Fun Facts</Link> */}
 								<Link to={"/contact"}>Contact</Link>
 							</Box>
 						</Show>

@@ -6,10 +6,11 @@ import js from "../assets/js.svg";
 import scss from "../assets/scss.svg";
 import react from "../assets/react.svg";
 import { Image } from "@chakra-ui/image";
+import { Box } from "@chakra-ui/react";
 
 const Resume = () => {
 	return (
-		<div className="main-grid">
+		<Box className="main-grid">
 			<main>
 				<p className="eyebrow">Skills & Experience</p>
 				<h1 className="page-title">My Resume</h1>
@@ -55,7 +56,7 @@ const Resume = () => {
 					</li>
 				</ul>
 			</aside>
-		</div>
+		</Box>
 	);
 };
 

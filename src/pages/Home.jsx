@@ -19,14 +19,13 @@ const Home = () => {
 			<Flex
 				align={"center"}
 				justify={"space-between"}
-				height={"100vh"}
-				paddingX={10}
+				height={"90vh"}
+				paddingX={14}
 				paddingY={{ base: "20%", md: 0, lg: 0 }}
 				direction={{ base: "column", md: "row", lg: "row" }}
 				gap={{ base: "10rem", md: 2, lg: 0 }}
 			>
 				<Box width={"50%"}>
-					{/* <Image className="helloImg" src={helloImg} /> */}
 					<Heading className="name" as={"h1"} marginBottom={5}>
 						Djordje Arandjelo<span>vic</span>
 					</Heading>

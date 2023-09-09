@@ -1,3 +1,8 @@
+@font-face {
+	font-family: StarWars;
+	src: url(/src/fonts/Starjedi.ttf);
+}
+
 * {
 	color: #fff;
 }
@@ -166,8 +171,7 @@ svg {
 	gap: clamp(1.5rem, 5vw, 10rem);
 	grid-auto-flow: dense;
 	align-items: center;
-	min-height: 100vh;
-	min-height: 100dvh;
+	min-height: 90vh;
 }
 
 aside {
