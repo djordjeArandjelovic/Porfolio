@@ -30,6 +30,7 @@ const Projects = () => {
 
 				<Stack>
 					<CardBody>
+						<Image className="ucImg" src={"./src/assets/uc6.jpg"} />
 						<Heading
 							fontFamily={"StarWars"}
 							fontWeight={"light"}

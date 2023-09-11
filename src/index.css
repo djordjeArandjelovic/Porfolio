@@ -311,3 +311,27 @@ main {
 .black {
 	color: #000;
 }
+
+.card1 {
+	position: relative;
+}
+
+.ucImg {
+	position: absolute;
+	height: 7rem;
+	left: 11%;
+	top: 30%;
+	animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
