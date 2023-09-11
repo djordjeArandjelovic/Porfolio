@@ -319,9 +319,11 @@ main {
 .ucImg {
 	position: absolute;
 	height: 7rem;
-	left: 11%;
+	left: 8.5%;
 	top: 30%;
 	animation: bounce 2s ease-in-out infinite;
+	border-radius: 0.275rem;
+	filter: grayscale(20%);
 }
 
 @keyframes bounce {
