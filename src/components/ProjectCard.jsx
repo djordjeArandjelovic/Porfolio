@@ -4,7 +4,7 @@ import { Button } from "@chakra-ui/button";
 import { Image } from "@chakra-ui/image";
 import { Card, CardBody, CardFooter } from "@chakra-ui/card";
 
-const ProjectCard = ({ heading, img, img_alt, project_desc, stack }) => {
+const ProjectCard = ({ heading, img, img_alt, project_desc, stack, font }) => {
 	return (
 		<Card
 			direction={{ base: "column", sm: "column", md: "row", lg: "row" }}
@@ -30,7 +30,7 @@ const ProjectCard = ({ heading, img, img_alt, project_desc, stack }) => {
 				<CardBody>
 					<Image className="ucImg" src={"./src/assets/uc6.jpg"} />
 					<Heading
-						fontFamily={"StarWars"}
+						fontFamily={font}
 						fontWeight={"light"}
 						letterSpacing={"1px"}
 						size="lg"

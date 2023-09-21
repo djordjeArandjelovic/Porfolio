@@ -35,9 +35,8 @@ const Home = () => {
 					<Text className="heroText">
 						I am a web developer, working on building (and occasinally
 						designing) digital experiences. Currently my main focus is React and
-						building web softwares. I am working as a Product Owner at the
-						moment in a software development company, but I am looking to branch
-						out.
+						building web softwares. At the moment I am working as a Product
+						Manager in a software development company.
 					</Text>
 					<Flex gap={10} className="btnBox">
 						<Button className="btn btn-cv" width={"10rem"}>
